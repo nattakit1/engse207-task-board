@@ -65,6 +65,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+
 // Body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
