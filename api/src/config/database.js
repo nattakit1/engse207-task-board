@@ -1,8 +1,10 @@
 // src/config/database.js
-// PostgreSQL Database Connection - Support both Docker and Railway
+// PostgreSQL Database Connection for Docker Environment
 
 const { Pool } = require('pg');
 
+// สร้าง connection pool
+// ใน Docker ใช้ชื่อ container แทน localhost
 // Railway ใช้ DATABASE_URL, Docker ใช้ตัวแปรแยก
 const pool = process.env.DATABASE_URL 
     ? new Pool({

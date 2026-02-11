@@ -4,7 +4,7 @@
 SSL_DIR="./nginx/ssl"
 mkdir -p $SSL_DIR
 
-echo "í´ Generating SSL certificate..."
+echo "ğŸ” Generating SSL certificate..."
 
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout $SSL_DIR/server.key \
